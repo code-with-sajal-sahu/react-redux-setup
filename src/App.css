@@ -1,0 +1,32 @@
+.header-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(359deg,#2a7f92,#133d5e 60%);
+  color: #fff;
+}
+.header-links{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.header-links li a{
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.header-links li {
+  padding: 10px 20px;
+}
+.header-links li a:hover{
+  color: rgb(114, 114, 45);
+}
+
+.header-logo{
+  width: 100px;
+  height: 40px;
+  filter:  contrast(180%);
+}
