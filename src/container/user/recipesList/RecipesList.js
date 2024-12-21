@@ -15,7 +15,7 @@ const RecipesList = () => {
   return (
     <UserLayout>
     <div class="wrap">
-        {recipesList?.recipes.map((recipe)=>(
+        {recipesList?.recipes?.map((recipe)=>(
             <div class="box">
             <div class="box-top">
               <img class="box-image" src={recipe.image} alt={recipe.name}/>

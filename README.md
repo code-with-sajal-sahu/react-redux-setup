@@ -32,5 +32,5 @@ npm install
 ### 3. Finaly Run
 ```bash
 npm start
-
+```
 ### 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
