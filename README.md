@@ -1,36 +1,16 @@
-# React Redux Setup
+# React + Vite
 
-This repository provides a starter template for initializing a React.js project with Redux. It integrates popular libraries like Axios for HTTP requests, Formik for form management, and Redux for state management. This setup aims to help you quickly bootstrap a React project with the necessary configurations for handling global state, API requests, and routing.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Libraries Used
+Currently, two official plugins are available:
 
-- **React**: A JavaScript library for building user interfaces.
-- **Redux**: A predictable state container for JavaScript apps, used to manage the global application state.
-- **React-Redux**: A binding library that provides the connection between React and Redux.
-- **Redux-Persist**: A library that allows Redux state to be persisted across sessions.
-- **Redux-Thunk**: A middleware for handling asynchronous actions in Redux.
-- **Formik**: A library for building forms in React with easy validation.
-- **Axios**: A promise-based HTTP client for making requests from the browser.
-- **React-Router-Dom**: A collection of navigational components for React to handle routing within your application.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## React Compiler
 
-Follow the instructions below to get your React project with Redux set up and running.
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-### 1. Clone the Repository
+## Expanding the ESLint configuration
 
-Clone this repository to your local machine using the following command:
-
-```bash
-git clone https://github.com/code-with-sajal-sahu/react-redux-setup.git
-```
-
-### 2. In the project directory, run:
-```bash
-npm install
-```
-### 3. Finaly Run
-```bash
-npm start
-```
-### 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

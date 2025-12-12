@@ -3,12 +3,11 @@ import UserLayout from "../layout/Layout";
 import { Link } from 'react-router-dom';
 import "./recipesList.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllRecipes } from '../../../redux/user/userThunks';
+import { getAllRecipes } from '../../../redux/user/userServices';
 // https://dummyjson.com/docs/recipes#recipes-all
 const RecipesList = () => {
     const { recipesList } = useSelector((state) => state.UserReducer);
     const dispatch = useDispatch();
-    console.log({recipesList})
     useEffect(()=>{
         dispatch(getAllRecipes())
     }, [])
