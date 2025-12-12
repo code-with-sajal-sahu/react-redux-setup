@@ -1,5 +1,5 @@
 import axios from "axios";
-export var baseUrl = process.env.REACT_APP_BASE_URL;
+export var baseUrl = import.meta.env.VITE_BASE_URL;
 
 // export var baseUrl = "http://localhost:3032/api/";
 

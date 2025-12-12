@@ -41,7 +41,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function Home() {
   const { taskList } = useSelector((state) => state.UserReducer);
   const dispatch = useDispatch();
-  console.log(taskList)
   return (
     <UserLayout>
       <h1>My Tasks</h1>
