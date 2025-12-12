@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { generateObjectId } from "../../utils";
-import { getAllRecipes } from "./userThunks.js";
+import { getAllRecipes } from "./userServices.js";
 
 
 const userSlice = createSlice({
@@ -22,7 +22,6 @@ const userSlice = createSlice({
     },    
     extraReducers: (builder) => {
         builder.addCase(getAllRecipes.fulfilled, (state, action)=>{
-            console.log(action, ":25recipe")
             state.recipesList = action.payload
         })
     } 
